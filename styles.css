@@ -1,8 +1,27 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 
+
+@font-face {
+    font-family: 'retroica';
+    src: url('fonts/retroica-webfont.woff2') format('woff2'),
+         url('fonts/retroica-webfont.woff') format('woff');
+    font-weight: normal; 
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'futura_std';
+    src: url('fonts/futura_std_heavy-webfont.woff2') format('woff2'),
+         url('fonts/futura_std_heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .container{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
@@ -44,17 +63,23 @@ ul{
 .action-buttons{
     position: relative;
     right: -55px;
-    padding: 5px 25px;
+    padding: 5px 35px;
+    background-color: #6A5ACD;
 }
 
 .sidebar{
     grid-row: 1/4;
-    background-color: #1992d4;
+    background-color: #E9967A;
     grid-column: 1/1;
 }
 
+.action-buttons:hover{
+    background-color: #00FFFF;
+    transition: .2s ease-in;
+}
 
 .article{
+    background-color: #F5F5F5;
     grid-column: 2/4;
     grid-row: 2/4;
     gap: 15px;
@@ -71,12 +96,12 @@ ul{
     border: 1px solid;
 }
 .sidebar-two{
-    background-color: azure;
+    background-color: #F4E1D2;
     grid-column: 4/4;
     grid-row: 2/3;
 }
 .trending{
-    background-color: antiquewhite;
+    background-color: #FFA07A;
     grid-column: 4/4;
     grid-row: 3/4;
 }
